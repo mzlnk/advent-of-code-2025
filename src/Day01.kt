@@ -47,12 +47,12 @@ fun main() {
         return result
     }
 
-    val testInput = readInput("Day01_test")
+    val testInput = readInputAsList("Day01_test")
     with(part1(testInput)) { check(this == 3) { "Got instead: $this" } }
     with(part2(testInput)) { check(this == 6) { "Got instead: $this" } }
 
     // Read the input from the `src/Day01.txt` file.
-    val input = readInput("Day01")
+    val input = readInputAsList("Day01")
     part1(input).println()
     part2(input).println()
 }
