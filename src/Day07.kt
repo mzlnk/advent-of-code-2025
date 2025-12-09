@@ -60,6 +60,6 @@ fun main() {
     with(part2(testInput)) { check(this == 40L) { "Got instead: $this" } }
 
     val input = readInputAsString("Day07")
-    part1(input).println()
-    part2(input).println()
+    timed { part1(input) }.println()
+    timed { part2(input) }.println()
 }
